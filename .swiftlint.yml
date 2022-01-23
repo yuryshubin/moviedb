@@ -1,0 +1,43 @@
+included: # paths to include during linting. `--path` is ignored if present.
+  #    - Slate/AppDelegate.swift
+  - MovieDB
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+disabled_rules:
+  - comment_spacing
+  - opening_brace
+  - trailing_whitespace
+  - statement_position
+  - force_try
+  - force_cast
+  - shorthand_operator
+  - identifier_name
+  - redundant_string_enum_value
+  - operator_whitespace
+  - cyclomatic_complexity
+  - syntactic_sugar
+  - unused_optional_binding
+  - nesting
+  - vertical_parameter_alignment # ???
+  - class_delegate_protocol # ???
+  - private_over_fileprivate # ???
+  - multiple_closures_with_trailing_closure # ???
+  - unused_closure_parameter # ???
+  - unneeded_break_in_switch # ???
+  - orphaned_doc_comment # ???
+  - redundant_discardable_let # uncomment later
+  - large_tuple # maybe uncomment later
+  - todo # uncomment later. to match our todo tags
+  - function_parameter_count # uncomment later
+  - function_body_length # uncomment later
+  - type_body_length # uncomment later
+  - file_length # uncomment later
+
+line_length: 200 # should be 120
+
+type_name:
+  min_length: 3 # only warning
+  max_length: 50 # warning and error
+
+# cyclomatic_complexity:
+#     ignores_case_statements: true
